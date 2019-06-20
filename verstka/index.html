@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Aдаптивный лейаут</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <div class="logo">
+        <a href="#"><img src="img/logo.jpg"></a>
+    </div>
+
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a class="help" href="#help">Help button</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
+</div>
+<div class="row">
+    <div class="column left">
+        <h2>Block 1 <br> 250px</h2>
+    </div>
+    <div class="column middle">
+        <div class="card">
+            <div class="block2">
+                <h3>Block 2</h3>
+                <div class="container">
+                    <img src="img/user.svg" alt="Avatar">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting</p>
+                    <span class="time-right">11:00</span>
+                </div>
+
+                <div class="container">
+                    <img src="img/user.svg" alt="Avatar">
+                    <p></p>
+                    <span class="time-right">11:01</span>
+                </div>
+
+                <div class="container">
+                    <img src="img/user.svg" alt="Avatar">
+                    <p></p>
+                    <span class="time-right">11:02</span>
+                </div>
+
+                <div class="container">
+                    <img src="img/user.svg" alt="Avatar">
+                    <p></p>
+                    <span class="time-right">11:05</span>
+                </div>
+                <div class="lol">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="column right">
+        <h2>Block 3 <br> 200px</h2>
+    </div>
+</div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+</html>
